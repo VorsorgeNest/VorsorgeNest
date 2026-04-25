@@ -195,7 +195,17 @@
         <p>
             Die App speichert ausschließlich Daten, die du selbst eingibst – zum Beispiel Namen und
             Geburtsdaten deiner Kinder, Untersuchungstermine, Impfungen sowie Wachstumsdaten. Diese
-            Daten werden lokal auf deinem Gerät gespeichert und nicht an externe Server übertragen.
+            Daten werden ausschließlich lokal auf deinem Gerät in einer mit AES-256 verschlüsselten
+            Datenbank gespeichert und nicht an externe Server übertragen.
+        </p>
+        <p>
+            Der Schlüssel zur Entschlüsselung der Datenbank wird im Android-Keystore deines Geräts
+            hardware-gestützt verwahrt und verlässt das Gerät zu keinem Zeitpunkt. Es findet keine
+            automatische Sicherung in Cloud-Dienste statt.
+        </p>
+        <p>
+            Bei Verlust oder Wechsel des Geräts gehen die gespeicherten Daten verloren, sofern du
+            sie nicht zuvor über die Export-Funktion in den Einstellungen gesichert hast.
         </p>
     </div>
 
@@ -230,30 +240,22 @@
     </div>
 
     <div class="card">
-        <h2>5. Freiwilliges Feedback</h2>
-        <p>
-            Du hast die Möglichkeit, über die Einstellungen ein freiwilliges Textfeedback zu senden.
-            Dieses Feedback wird über die Trello-API (Atlassian, Inc., USA) übertragen und in einem
-            internen Trello-Board gespeichert. Dabei werden zusätzlich die App-Version sowie die
-            Android-Version deines Geräts übermittelt.
-        </p>
-        <p>
-            Es werden keine personenbezogenen Daten wie Name, Geburtsdaten oder Gesundheitsdaten
-            übertragen. Die Nutzung der Feedback-Funktion ist vollständig freiwillig.
-        </p>
-        <p>
-            Atlassian verarbeitet diese Daten gemäß der
-            <a href="https://atlassian.com/legal/privacy-policy" target="_blank">Atlassian-Datenschutzrichtlinie</a>.
-            Die Datenübertragung in die USA erfolgt auf Grundlage der Standardvertragsklauseln der EU-Kommission.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>6. Datenweitergabe an Dritte</h2>
+        <h2>5. Datenweitergabe an Dritte</h2>
         <p>
             Deine persönlichen Daten (Kinder, Termine, Impfungen, Wachstumsdaten) werden nicht an
             Dritte weitergegeben. Die Export-Funktion erzeugt eine lokale Datei, die du selbst
             teilen oder sichern kannst.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>6. Datensicherung</h2>
+        <p>
+            Da deine Daten ausschließlich lokal und ohne Cloud-Backup gespeichert werden, bist du
+            selbst für die Sicherung verantwortlich. Über die Export-Funktion in den Einstellungen
+            kannst du jederzeit eine Datei mit allen Daten erzeugen und an einem Ort deiner Wahl
+            ablegen (z. B. E-Mail an dich selbst, Cloud-Speicher, externes Medium). Beim Wechsel
+            des Geräts kannst du diese Datei in der App auf dem neuen Gerät wieder importieren.
         </p>
     </div>
 
